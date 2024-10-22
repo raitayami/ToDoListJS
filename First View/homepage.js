@@ -17,9 +17,10 @@ setTimeout(askName, 1000)
 const submitNameBtn = document.createElement('button')
 submitNameBtn.innerHTML = "Submit"
 submitNameBtn.classList.add('styleSubmitBtn')
+const inputForName = document.createElement('input')
+
 
 function inputBox(){
-    const inputForName = document.createElement('input')
     inputForName.style.width = "300px"
     inputForName.placeholder = "Write name..."
     inputDiv.appendChild(inputForName)
@@ -33,4 +34,10 @@ function inputBox(){
 
 setTimeout(inputBox, 2000)
 
+
+submitNameBtn.addEventListener('click', ()=>{
+
+    const name = inputForName.value
+    window.location.href = `../Second View/toDoList.html?name=${encodeURIComponent(name)}`
+})
 

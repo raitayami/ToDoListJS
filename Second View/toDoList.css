@@ -1,0 +1,57 @@
+*{
+    font-family: "Montserrat", serif;
+    background-color: #4A628A;
+    color: white;
+
+}
+
+#mainContent{
+    display: flex;
+}
+
+#taskBlock{
+    width: 50%;
+}
+
+#listOfTasks{
+    width: 50%;
+
+}
+
+#createBtn{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.taskBlockStyle{
+    display: flex;
+    flex-direction: column;
+}
+
+.taskInputBlock{
+    border: 1px solid white;
+    margin: 10px 0px;
+    border-radius: 20px;
+    padding:10px 20px;
+    outline: none;
+    border:none property
+}
+
+.taskBlockDescription{
+    border: 1px solid white;
+    margin: 10px 0px;
+    border-radius: 10px;
+    padding:10px 20px;
+    resize: vertical; 
+    min-height: 200px;
+    outline: none;
+    border:none property
+}
+
+
+.submitTaskBtn{
+    width: 25%;
+    border: 1px solid white;
+    color: white;
+}
