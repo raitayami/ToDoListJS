@@ -10,10 +10,12 @@
 }
 
 #taskBlock{
+    margin: 20px;
     width: 50%;
 }
 
 #listOfTasks{
+    margin: 20px;
     width: 50%;
 
 }
@@ -50,8 +52,30 @@
 }
 
 
-.submitTaskBtn{
+button{
     width: 25%;
     border: 1px solid white;
     color: white;
+}
+
+
+/* List of tasks CSS */
+
+#listOfTasks{
+    list-style-type: none;
+}
+
+.taskRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.task{
+    background-color: aqua;
+}
+
+ul{
+    padding: 0;
+    margin: 10px;
 }
